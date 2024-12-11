@@ -7,20 +7,22 @@ $(document).ready(function(){
         $('form').slideUp();
     })
 
-    $('form').on('submit', function(e) {
+    $('form').on('submit', function (e) {
         e.preventDefault();
-        const enderecoNovaImagem = $('#endereco-imagem-nova').val();
-        const novoItem = $('<li style="display: none"></li>');
-        $(`<img src="${enderecoNovaImagem}" />`).appendTo(novoItem);
-        $(`
-            <div class="overlay-imagem-link">
-                <a href="${enderecoNovaImagem}" target="_blank" title="Ver imagem em tamanho real">
-                    Ver imagem em tamanho real
-                </a>
-            </div>
-        `).appendTo(novoItem);
-        $(novoItem).appendTo('ul');
-        $(novoItem).fadeIn(5000);
-        $('#endereco-imagem-nova').val('');
-    })
+        const novaTarefa = $('#nova-tarefa').val();
+        if (novaTarefa) {
+            if ($('#lista-tarefas').css('display') === 'none') {
+                $('#lista-tarefas').slideDown();
+            }
+            const adcTarefa = $('<li style="display: none"></li>').text(novaTarefa);
+            $('#lista-tarefas').append(adcTarefa);
+            adcTarefa.slideDown();
+            $('#nova-tarefa').val('');
+        }
+    });
+
+    $(document).on('click', '#lista-tarefas li', function () {
+        $(this).toggleClass('riscar');
+    });
+
 })

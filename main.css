@@ -6,18 +6,20 @@
 }
 
 header {
-    background-color: #5f27cd;
+    background-color: #3b3646;
     padding: 16px 0;
     color: #fff;
     display: flex;
     border-bottom: 16px solid #341f97;
     justify-content: center;
     text-transform: uppercase;
+    align-items:center;
     font-style: italic;
 }
 
 header button {
     margin-left: 16px;
+    width: 160px;
 }
 
 form {
@@ -37,7 +39,7 @@ button {
 }
 
 button {
-    background-color: #009432;
+    background-color: #006a94;
     border: none;
     font-weight: bold;
     text-transform: uppercase;
@@ -46,42 +48,41 @@ button {
 }
 
 #botao-cancelar {
-    background-color: red;
+    background-color: rgb(105, 60, 60);
 }
 
 ul {
     display: flex;
-    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 ul li {
     max-width: 25%;
     list-style: none;
-    position: relative;
+    position:relative;
     max-height: 280px;
     overflow-y: hidden;
 }
 
-ul li img {
-    width: 100%;
+.riscar {
+    text-decoration: line-through;
 }
 
-.overlay-imagem-link {
-    padding: 16px;
-    background-color: rgba(0,0,0,0.7);
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    opacity: 0;
-    transition: all ease .5s;
-}
-
-.overlay-imagem-link a {
-    color: #fff;
-    text-decoration: none;
-}
-
-ul li:hover .overlay-imagem-link {
-    opacity: 1;
+#lista-tarefas {
+    list-style: none;
+    padding: 14px;
+    text-align: center;
+    width: 600px;
+    margin: 0 auto;
+    margin-top: 26px;
+    background-color: #c3b19a;
+    color: #000;
+    display: none;
+    max-height:560px;
+    overflow-y: auto;
+    border-radius: 12px;
+    font-size: x;
 }
