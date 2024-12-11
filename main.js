@@ -1,30 +1,26 @@
-const form = document.getElementById('form-calcular');
+$(document).ready(function(){
+    $('header button').click(function() {
+        $('form').slideDown();
+    })
 
-function validaForm(numero1, numero2) {
-    if (numero2 > numero1) {
-        return true;
-    } else {
-        return false;
-    }
-}
+    $('#botao-cancelar').click(function() {
+        $('form').slideUp();
+    })
 
-form.addEventListener('submit', function(e) {
-    e.preventDefault();
-
-    const numeroA = document.getElementById('campo-a');
-    const numeroB = document.getElementById('campo-b');
-    const mensagemInsucesso = `O número B: ${numeroB.value} não é maior que o número A: ${numeroA.value}`;
-    
-    formValido = validaForm(Number(numeroA.value), Number(numeroB.value));
-    if (!formValido) {
-        alert(mensagemInsucesso)
-    } else {
-        alert("Formulário submetido com sucesso")
-
-        numeroA.value = ' ';
-        numeroB.value = ' ';
-    }
-
+    $('form').on('submit', function(e) {
+        e.preventDefault();
+        const enderecoNovaImagem = $('#endereco-imagem-nova').val();
+        const novoItem = $('<li style="display: none"></li>');
+        $(`<img src="${enderecoNovaImagem}" />`).appendTo(novoItem);
+        $(`
+            <div class="overlay-imagem-link">
+                <a href="${enderecoNovaImagem}" target="_blank" title="Ver imagem em tamanho real">
+                    Ver imagem em tamanho real
+                </a>
+            </div>
+        `).appendTo(novoItem);
+        $(novoItem).appendTo('ul');
+        $(novoItem).fadeIn(5000);
+        $('#endereco-imagem-nova').val('');
+    })
 })
-
-console.log(form);
