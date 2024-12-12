@@ -5,84 +5,166 @@
     font-family: 'Roboto', sans-serif;
 }
 
-header {
-    background-color: #3b3646;
-    padding: 16px 0;
+html {
+    overflow-x: hidden;
+}
+
+.container {
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+header, footer {
+    background-color: #303950;
+    padding-top: 16px;
     color: #fff;
-    display: flex;
-    border-bottom: 16px solid #341f97;
-    justify-content: center;
-    text-transform: uppercase;
-    align-items:center;
-    font-style: italic;
 }
 
-header button {
-    margin-left: 16px;
-    width: 160px;
+header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 1;
 }
 
-form {
-    background-color: #c8d6e5;
-    padding: 24px 0;
-    text-align: center;
+header > .container,
+footer > .container {
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 16px;
+}
+
+nav {
+    background-color: #113412;
+    padding: 16px 0;
     display: none;
 }
 
-form h2 {
-    margin-bottom: 16px;
-}
-
-input,
-button {
-    padding: 8px;
-}
-
-button {
-    background-color: #006a94;
-    border: none;
+nav li {
+    list-style: none;
+    display: inline;
+    margin-right: 16px;
+    font-size: 18px;
     font-weight: bold;
     text-transform: uppercase;
+}
+
+nav li a {
     color: #fff;
+    text-decoration: none;
+}
+
+.menu-hamburger {
+    width: 32px;
     cursor: pointer;
 }
 
-#botao-cancelar {
-    background-color: rgb(105, 60, 60);
+.menu-hamburger span {
+    height: 2px;
+    width: 100%;
+    background-color: #fff;
+    display: block;
+    margin-bottom: 4px;
 }
 
-ul {
+.container-flex {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    justify-content: space-between;
 }
 
-ul li {
-    max-width: 25%;
+#sobre-loja img {
+    max-width: 400px;
+    margin-right: 24px;
+}
+
+section {
+    padding: 48px 0;
+}
+
+section h2 {
+    margin-bottom: 16px;
+}
+
+.lista-veiculos {
+    flex-wrap: wrap;
+}
+
+.lista-veiculos li {
     list-style: none;
-    position:relative;
-    max-height: 280px;
-    overflow-y: hidden;
+    max-width: 30%;
+    margin-bottom: 24px;
 }
 
-.riscar {
-    text-decoration: line-through;
+.lista-veiculos li img {
+    max-width: 100%;
 }
 
-#lista-tarefas {
+.lista-veiculos li h3 {
+    margin: 16px 0;
+}
+
+.item-central {
+    margin: 0 5%;
+}
+
+button {
+    display: block;
+    width: 100%;
+    padding: 8px;
+    border: none;
+    background-color: #c48a34;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    font-style: italic;
+    cursor: pointer;
+    border-radius: 6px;
+}
+
+.price {
+    margin: 16px o;
+    display: block;
+}
+
+.price del {
+    color: #ccc;
+    font-size: 12px;
+}
+
+.form-campo {
+    margin-bottom: 16px;
+}
+
+.form-campo label {
+    font-weight: bold;
+    display: block;
+}
+
+.form-campo input,
+.form-campo textarea {
+    width: 100%;
+    display: block;
+    padding: 8px;
+}
+
+.form-campo textarea {
+    resize: none;
+    height: 120px;
+}
+
+form {
+    max-width: 360px;
+}
+
+form button {
+    max-width: 120px;
+}
+
+footer li {
     list-style: none;
-    padding: 14px;
-    text-align: center;
-    width: 600px;
-    margin: 0 auto;
-    margin-top: 26px;
-    background-color: #c3b19a;
-    color: #000;
-    display: none;
-    max-height:560px;
-    overflow-y: auto;
-    border-radius: 12px;
-    font-size: x;
+    margin-left: 16px;
+}
+
+footer li img {
+    height: 32px;
 }
