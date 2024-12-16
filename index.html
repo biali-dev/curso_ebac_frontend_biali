@@ -1,93 +1,127 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>EBAC Motors</title>
-        <link rel="preconnect" href="http://fonts.googleapis.com">
-        <link rel="preconnect" href="http://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="./main.css">
-        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
-        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
-    </head>
-    <body>
-        <header>
-            <div class="container container-flex">
-                <h1>EBAC Motors</h1>
-                <div class="menu-hamburger">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
-            </div>
-            <nav>
-                <div class="container">
-                    <ul>
-                        <li>
-                            <a href="#">Sobre</a>
-                        </li>
-                        <li>
-                            <a href="#">Em destaque</a>
-                        </li>
-                        <li>
-                            <a href="#">Promoções</a>
-                        </li>
-                        <li>
-                            <a href="#">Contato</a>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
-    </header>
-    <div id="carousel-imagens">
-        <img src="./assets/slide1.png" alt="Carro Porsche">
-        <img src="./assets/slide2.png" alt="Carro BMW">
-        <img src="./assets/slide3.png" alt="Carro Ford">
-    </div>
-
-    <section id="contato">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BJJ Club - a arte suave</title>
+    <link rel="stylesheet" href="./main.css">
+    <link rel="preconnect" href="http://fonts.googleapis.com">
+    <link rel="preconnect" href="http://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
         <div class="container">
-            <h2>Entre em contato</h2>
-            <form>
-                <div class="form-campo">
-                    <label for="nome">Nome:</label>
-                    <input type="text" id="nome" name="nome">
-                </div>
-                <div class="form-campo">
-                    <label for="telefone">Telefone:</label>
-                    <input type="tel" id="telefone" name="telefone">
-                </div>
-                <div class="form-campo">
-                    <label for="email">E-mail:</label>
-                    <input type="email" id="email" name="email">
-                </div>
-                <div class="form-campo">
-                    <label for="cpf">CPF:</label>
-                    <input type="text" id="cpf" name="cpf">
-                </div>
-                <div class="form-campo">
-                    <label for="cep">CEP da residência:</label>
-                    <input type="text" id="cep" name="cep">
-                </div>
-                <div class="form-campo">
-                    <label for="veiculo-interesse">Veículo de interesse:</label>
-                    <input type="text" id="veiculo-interesse" name="veiculoDeInteresse">
-                </div>
-                <div class="form-campo">
-                    <label for="mensagem">Mensagem:</label>
-                    <textarea id="mensagem" name="mensagem"></textarea>
-                </div>
-                <button type="submit">Enviar</button>
-            </form>
+            <h1>BJJ Club</h1>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="#about">Sobre o clube</a>
+                    </li>
+                    <li>
+                        <a href="#products">Produtos</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section id="sobre-loja">
+        <div class="container container-flex">
+            <img class="store-front" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9VfHuQ9do54PtnOzBnzKRkcYQzil_vB-hDw&s" alt="Logo da marca/clube" />
+            <div>
+                <h2>Conheça a história do Jiu-jitsu</h2>
+                <p>
+                    Segundo alguns historiadores o Jiu-Jitsu ou “arte suave”, nasceu na Índia e era praticado por monges budistas. Preocupados com a auto defesa, os monges desenvolveram uma técnica baseada nos princípios do equilíbrio, do sistema de articulação do corpo e das alavancas, evitando o uso da força e de armas.
+                </p>
+                <p>
+                    Com a expansão do budismo o Jiu-Jitsu percorreu o Sudeste asiático, a China e, finalmente, chegou ao Japão, onde se desenvolveu e popularizou-se. A partir do final do século XIX, alguns mestres de Jiu-Jitsu migraram do Japão para outros Continentes, vivendo do ensino da arte marcial e das lutas que realizavam.
+                </p>
+                <p>
+                    Mitsuyo Maeda, conhecido como Conde Koma, foi um deles. Depois de viajar com sua trupe lutando em vários países da Europa e das Américas, chegou ao Brasil em 1915 e se fixou em Belém do Pará, no ano seguinte, onde conheceu Gastão Gracie. Pai de oito filhos, cinco homens e três mulheres, Gastão tornou-se um entusiasta do Jiu-Jitsu e levou o mais velho, Carlos, para aprender a luta com o japonês. Franzino por natureza, aos 15 anos, Carlos Gracie encontrou no Jiu-Jitsu um meio de realização pessoal. Aos 19, se transferiu para o Rio de Janeiro com a família e adotou a profissão de lutador e professor dessa arte marcial. Viajou para Belo Horizonte e depois para São Paulo, ministrando aulas e vencendo adversários bem mais fortes fisicamente. Em 1925, voltou ao Rio de Janeiro e abriu a primeira Academia Gracie de Jiu-Jitsu.
+                </p>
+            </div>
         </div>
     </section>
+    <section id="products" class="destaque">
+        <div class="container products-wraper">
+            <h2>Produtos</h2>
+            <ul class="container-flex products-wraper">
+                <li>
+                    <img src="https://cdn.sistemawbuy.com.br/arquivos/3dfdbc600e13b56c64dd224bf6d5da93/produtos/65009d2b39c23/18-650470f48f02d.png" alt="">
+                    <h3>Kimono Atama</h3>
+                    <p>
+                        Kimono azul em todos os tamanhos
+                    </p>
+                    <div class="price">
+                        <strong>R$ 750</strong>
+                    </div>
+                    <button type="button">Adicionar ao carrinho</button>
+                </li>
+                <li>
+                    <img src="https://img.olx.com.br/images/26/266466342004063.jpg" alt="">
+                    <h3>Kimono Kvra</h3>
+                    <p>
+                        Kimono branco em todos os tamanhos
+                    </p>
+                    <div class="price">
+                        <strong>R$ 800</strong>
+                    </div>
+                    <button type="button">Adicionar ao carrinho</button>
+                </li>
+                <li>
+                    <img src="https://acdn.mitiendanube.com/stores/003/487/611/products/rsml0-accefff9b06c2f5ee617174996617907-1024-1024.png" alt="">
+                    <h3>Rashguard</h3>
+                    <p>
+                        Rashguard para No-Gi em diversos tamanhos
+                    </p>
+                    <div class="price">
+                        <strong>R$ 150</strong>
+                    </div>
+                    <button type="button">Adicionar ao carrinho</button>
+                </li>
+                <li>
+                    <img src="https://acdn.mitiendanube.com/stores/002/368/707/products/bermuda_mma_de_combate_jiujitsu1-fdcc3a4b29fa6f92e316616299731490-480-0.jpg" alt="">
+                    <h3>Calção MMA BJJ</h3>
+                    <p>
+                        Calção para treinos No-Gi em diversos tamanhos
+                    </p>
+                    <div class="price">
+                        <strong>R$ 150</strong>
+                    </div>
+                    <button type="button">Adicionar ao carrinho</button>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <footer>
+        <div class="container container-flex">
+            <p>
+                2024 &copy; BJJ Club - Todos os direitos reservados
+            </p>
+            <ul class="container-flex">
+                <li>
+                    <a href="">
+                        <img src="./icones/facebook.png" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="./icones/instagram.png" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="./icones/youtube.png" alt="">
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </footer>
     <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="./js/jquery.mask.min.js"></script>
     <script src="./js/jquery.validate.min.js"></script>
     <script src="./js/messages_pt_BR.min.js"></script>    
-    <script src="./js/main.js"></script>
 </body>
 </html>
