@@ -8,8 +8,7 @@
   font-family: Roboto, sans-serif;
 }
 body {
-  background-color: #192a56;
-  color: #f5f6fa;
+  background-color: #f5f6fa;
 }
 li {
   list-style: none;
@@ -18,9 +17,6 @@ li {
   max-width: 960px;
   width: 100%;
   margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
 }
 @media (max-width: 767px) {
   .container {
